@@ -1,0 +1,93 @@
+body {
+  background-color: #faad80;
+}
+h1 {
+  margin-left: 45px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 15px;
+  margin-left: 45px;
+}
+.content {
+  position: static;
+  background-color: #ff6767;
+  border-radius: 30px;
+  max-width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 50px;
+  box-shadow: 9px 12px 27px -4px rgba(0, 0, 0, 0.4);
+  color: white;
+  font-family: "Anonymous Pro", monospace;
+}
+
+.rainy {
+  width: 100px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.col-md-2 {
+  text-align: center;
+  padding-top: 15px;
+  margin: 0 auto;
+}
+.forecastIcon {
+  width: 45px;
+}
+
+.days {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.temperature {
+  font-size: larger;
+}
+
+.btn-primary {
+  background-color: #a73489;
+  border-color: #a73489;
+  padding: 6px;
+  margin: 3px;
+  width: 100px;
+  height: 35px;
+}
+
+.btn-primary:hover {
+  background-color: #faad80;
+  border-color: #faad80;
+}
+
+.btn btn-primary {
+  background-color: #faad80;
+  border-color: transparent;
+  padding: 6px;
+  margin: 3px;
+  width: 100px;
+  height: 35px;
+}
+.btn btn-primary:hover {
+  background-color: #faad80;
+  border-color: #faad80;
+}
+
+.temp {
+  font-size: x-large;
+}
+
+.celsius-link {
+  color: red;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  font-family: "Anonymous Pro", monospace;
+  font-size: xx-small;
+}

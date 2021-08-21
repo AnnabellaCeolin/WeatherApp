@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <form class="search-form">
+          <div class="row">
+            <div class="col-7">
+              
+  <form class="row select-city" id="search-form">
+  <input
+          type="text"
+          class="form-control col-8 enter-city"
+          id="search-city-input"
+          placeholder="Enter a city"
+          autofocus
+        />
+                
+   </form>
+      </div>
+  <div class="col-5">
+      <input
+          type="submit"
+          value="Search"
+          class="form-control btn-primary"
+        />
+  <button 
+  class="btn btn-primary" 
+  id="current-location-button"
+> Current</button>
+            </div>
+          </div>
+        </form> <br>
+
+
+<h1 
+id="current-city">Pordenone</h1>
+
+<h3 id="current-date">Sun 18 July 2021</h3>
+
+        <div class="weathernow">
+        <div class="row no-gutters">
+          <div class="col-12 col-sm-6 col-md-8">
+            <img src="img/rainy.png" class="rainy" />
+          </div>
+          <div class="col-6 col-md-4">
+
+<div class="temperature" id="temperature">0</div>
+
+           <span class="units">
+
+ <a href="#" id="today-celsius" class="today-celsius">°C </a> |
+<a href="#" id="today-fahrenheit" class="today-fahrenheit">℉ </a>
+              </span> 
+              
+<div id="humidity" class="row">Humidity: 24%</div>
+<div id="wind" class="row">Wind: 0 km/h</div>
+          </div>
+          </div>
+      </div>
+
+
+      <p class="weekdays">
+        <div class="row days">
+          <div class="day1Weather"> <img src="img/sunny.png" class="forecastIcon"><div class="days">Mon</div><div class="temperatures"><strong>31°</strong> 19°</div></div>
+          <div class="day2Weather"><img src="img/rainy.png" class="forecastIcon"><div class="days">Tue</div><div class="temperatures"><strong>29°</strong> 18°</div></div>
+          <div class="day3Weather"><img src="img/sunny.png" class="forecastIcon"><div class="days">Wed</div><div class="temperatures"><strong>29°</strong> 19°</div></div>
+          <div class="day4Weather"><img src="img/sunny.png" class="forecastIcon"><div class="days">Thu</div><div class="temperatures"><strong>29°</strong> 19°</div></div>
+          <div class="day5Weather"><img src="img/sunny.png" class="forecastIcon"><div class="days">Fri</div><div class="temperatures"><strong>30°</strong> 19°</div></div>
+
+      </div>
+   
+</p>
+<br>
+<div class="footer">coded by Annabella Ceolin</div>
+</div>      
+    </div>
+        </div>
+        
+<script src="src/app.js"></script>
+  </body>
+</html>
+
+
+
+
