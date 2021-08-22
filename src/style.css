@@ -38,16 +38,23 @@ h3 {
   margin: 0 auto;
 }
 .forecastIcon {
-  width: 45px;
+  width: 52px;
+  margin: 0 0 12 0px;
 }
 
 .days {
-  font-size: larger;
-  font-weight: bold;
+  font-size: x-large;
+  font-weight: lighter;
+  margin: 12px;
 }
 
 .temperature {
-  font-size: larger;
+  font-size: x-large;
+}
+
+.highTemp {
+  font-size: medium;
+  margin: 12px;
 }
 
 .btn-primary {
@@ -85,9 +92,17 @@ h3 {
   color: red;
 }
 
-.footer {
+footer {
   text-align: center;
-  color: white;
+  color: #5f6769;
   font-family: "Anonymous Pro", monospace;
-  font-size: xx-small;
+  font-size: small;
+}
+
+.footerLink {
+  color: white;
+}
+.footerLink:hover {
+  color: white;
+  cursor: pointer;
 }
