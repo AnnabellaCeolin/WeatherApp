@@ -94,14 +94,16 @@ h3 {
 
 footer {
   text-align: center;
-  color: #5f6769;
+  color: white;
   font-family: "Anonymous Pro", monospace;
   font-size: small;
 }
 
 .footerLink {
   color: white;
+  text-decoration: underline;
 }
+
 .footerLink:hover {
   color: white;
   cursor: pointer;
