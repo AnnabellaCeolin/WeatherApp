@@ -68,7 +68,9 @@ function displayWeatherCondition(response) {
   document.querySelector ("#description").innerHTML = response.data.weather[0].description;
   document.querySelector ("#date").innerHTML = formatDate(response.data.dt * 1000);
 
-console.log (response.data)}
+}
+
+
 function navigation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(currentPos);
