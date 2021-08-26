@@ -57,12 +57,12 @@ function getSearchCity(city) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
-getSearchCity("Maniago");
+getSearchCity("New York");
 
 function displayWeatherCondition(response) {
 
   let temperatureElement = document.querySelector("#temperature");
-  let cityElement = document.querySelector("#city");
+  let cityElement = document.querySelector("#current-city");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
@@ -87,14 +87,22 @@ function displayWeatherCondition(response) {
 
 }
 
-
 function navigation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(currentPos);
 }
 
+function showFarenheitTemperature(event){
+  event.preventDefault();
+  let FarenheitTemperature = (0 * 9) /5 + 32;
+  alert (FarenheitTemperature);
+
+}
 let currentCityWeather = document.querySelector("#current-location-button");
 currentCityWeather.addEventListener("click", navigation);
 
 let searchedCity = document.querySelector(".search-form");
 searchedCity.addEventListener("submit", search);
+
+let farenheitLink = document.querySelector("#today-fahrenheit");
+farenheitLink.addEventListener("click", showFarenheitTemperature); 
