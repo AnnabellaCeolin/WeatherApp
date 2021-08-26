@@ -57,8 +57,6 @@ function getSearchCity(city) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
-
-
 function displayWeatherCondition(response) {
 
   let temperatureElement = document.querySelector("#temperature");
@@ -83,8 +81,6 @@ function displayWeatherCondition(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-
-
 }
 
 function navigation(event) {
@@ -99,8 +95,6 @@ function showFarenheitTemperature(event){
   farenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(farenheitTemperature) ;
-
-
 }
 
 function showCelsiusTemperature (event){
@@ -110,6 +104,7 @@ function showCelsiusTemperature (event){
   let temperatureElement = document.querySelector("#temperature");
 temperatureElement.innerHTML= Math.round(celsiusTemperature);
 }
+
 
 let celciusTemperature = null;
 
