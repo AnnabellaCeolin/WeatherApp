@@ -24,6 +24,7 @@ h3 {
   box-shadow: 9px 12px 27px -4px rgba(0, 0, 0, 0.4);
   color: white;
   font-family: "Anonymous Pro", monospace;
+  text-transform: capitalize;
 }
 
 .rainy {
@@ -50,6 +51,12 @@ h3 {
 
 .temperature {
   font-size: x-large;
+}
+
+.description {
+  font-size: x-large;
+  font-weight: lighter;
+  margin: 12px;
 }
 
 .highTemp {
