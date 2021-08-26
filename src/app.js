@@ -94,8 +94,9 @@ function navigation(event) {
 
 function showFarenheitTemperature(event){
   event.preventDefault();
-  let FarenheitTemperature = (0 * 9) /5 + 32;
-  alert (FarenheitTemperature);
+  let farenheitTemperature = (14 * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(farenheitTemperature) ;
 
 }
 let currentCityWeather = document.querySelector("#current-location-button");
