@@ -57,7 +57,7 @@ function getSearchCity(city) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
-getSearchCity("New York");
+
 
 function displayWeatherCondition(response) {
 
@@ -94,11 +94,14 @@ function navigation(event) {
 
 function showFarenheitTemperature(event){
   event.preventDefault();
-  let farenheitTemperature = (14 * 9) / 5 + 32;
+  let farenheitTemperature = (celsiusTemperature * 9 ) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(farenheitTemperature) ;
 
 }
+
+let celciusTemperature = null;
+
 let currentCityWeather = document.querySelector("#current-location-button");
 currentCityWeather.addEventListener("click", navigation);
 
@@ -107,3 +110,5 @@ searchedCity.addEventListener("submit", search);
 
 let farenheitLink = document.querySelector("#today-fahrenheit");
 farenheitLink.addEventListener("click", showFarenheitTemperature); 
+
+getSearchCity("New York");
