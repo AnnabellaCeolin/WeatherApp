@@ -13,6 +13,13 @@ h3 {
   font-size: 15px;
   margin-left: 45px;
 }
+
+footer {
+  text-align: center;
+  color: white;
+  font-family: "Anonymous Pro", monospace;
+  font-size: small;
+}
 .content {
   position: static;
   background-color: #ff6767;
@@ -50,7 +57,7 @@ h3 {
 }
 
 .temperature {
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 .description {
@@ -95,17 +102,6 @@ h3 {
   font-size: x-large;
 }
 
-.celsius-link {
-  color: red;
-}
-
-footer {
-  text-align: center;
-  color: white;
-  font-family: "Anonymous Pro", monospace;
-  font-size: small;
-}
-
 .footerLink {
   color: white;
   text-decoration: underline;
@@ -114,4 +110,14 @@ footer {
 .footerLink:hover {
   color: white;
   cursor: pointer;
+}
+
+.today-celsius {
+  color: white;
+  font-size: medium;
+}
+
+.today-fahrenheit {
+  color: white;
+  font-size: medium;
 }

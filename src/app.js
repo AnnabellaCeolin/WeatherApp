@@ -95,13 +95,18 @@ function navigation(event) {
 function showFarenheitTemperature(event){
   event.preventDefault();
   let farenheitTemperature = (celsiusTemperature * 9 ) / 5 + 32;
+  celsiusLink.classList.remove("active");
+  farenheitLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(farenheitTemperature) ;
+
 
 }
 
 function showCelsiusTemperature (event){
   event.preventDefault();
+  celsiusLink.classList.add("active");
+  farenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
 temperatureElement.innerHTML= Math.round(celsiusTemperature);
 }
@@ -121,4 +126,4 @@ let celsiusLink = document.querySelector("#today-celsius");
 celsiusLink.addEventListener("click", showCelsiusTemperature); 
 
 
-getSearchCity("New York");
+getSearchCity("Maniago");
