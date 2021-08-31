@@ -66,7 +66,6 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 
-
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
@@ -83,8 +82,6 @@ function search(event) {
 
   getSearchCity(searchInput.value);
 }
-let form = document.querySelector(".search-form");
-form.addEventListener("submit", search);
 
 function currentPos(position) {
   let latitude = position.coords.latitude;
@@ -134,38 +131,20 @@ function navigation(event) {
   navigator.geolocation.getCurrentPosition(currentPos);
 }
 
-function showFarenheitTemperature(event){
-  event.preventDefault();
-  let farenheitTemperature = (celsiusTemperature * 9 ) / 5 + 32;
-  celsiusLink.classList.remove("active");
-  farenheitLink.classList.add("active");
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(farenheitTemperature) ;
-}
-
 function showCelsiusTemperature (event){
   event.preventDefault();
-  celsiusLink.classList.add("active");
-  farenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
 temperatureElement.innerHTML= Math.round(celsiusTemperature);
 }
 
-
-let celciusTemperature = null;
+let form = document.querySelector(".search-form");
+form.addEventListener("submit", search);
 
 let currentCityWeather = document.querySelector("#current-location-button");
 currentCityWeather.addEventListener("click", navigation);
 
 let searchedCity = document.querySelector(".search-form");
 searchedCity.addEventListener("submit", search);
-
-let farenheitLink = document.querySelector("#today-fahrenheit");
-farenheitLink.addEventListener("click", showFarenheitTemperature); 
-
-let celsiusLink = document.querySelector("#today-celsius");
-celsiusLink.addEventListener("click", showCelsiusTemperature); 
-
 
 getSearchCity("Maniago");
 getForecast();

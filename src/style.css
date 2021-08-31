@@ -1,5 +1,5 @@
 body {
-  background-color: #faad80;
+  background-color: #fdf6f0;
 }
 h1 {
   margin-left: 45px;
@@ -22,22 +22,16 @@ footer {
 }
 .content {
   position: static;
-  background-color: #ff6767;
+  background-color: #e98580;
   border-radius: 30px;
   max-width: 50%;
   margin: auto;
   margin-top: 50px;
   padding: 50px;
   box-shadow: 9px 12px 27px -4px rgba(0, 0, 0, 0.4);
-  color: white;
+  color: black;
   font-family: "Anonymous Pro", monospace;
   text-transform: capitalize;
-}
-
-.rainy {
-  width: 100px;
-  margin-left: 30px;
-  margin-top: 10px;
 }
 
 .forecastIcon {
@@ -67,8 +61,9 @@ footer {
 }
 
 .btn-primary {
-  background-color: #a73489;
-  border-color: #a73489;
+  background-color: #fdf6f0;
+  border-color: #fdf6f0;
+  color: black;
   padding: 6px;
   margin: 3px;
   width: 100px;
@@ -76,8 +71,8 @@ footer {
 }
 
 .btn-primary:hover {
-  background-color: #faad80;
-  border-color: #faad80;
+  background-color: #df5e5e;
+  border-color: #df5e5e;
 }
 
 .btn btn-primary {
@@ -108,30 +103,27 @@ footer {
 }
 
 .today-celsius {
-  color: white;
-  font-size: medium;
-}
-
-.today-fahrenheit {
-  color: white;
-  font-size: medium;
+  color: black;
+  font-size: large;
 }
 
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #000;
+  color: black;
+  border-radius: 10px;
 }
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.7;
+  color: black;
 }
 
 .weather-forecast-temperatures {
   font-size: 13px;
+  color: black;
 }
