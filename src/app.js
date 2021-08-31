@@ -30,7 +30,7 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 4) {
+    if (index < 6) {
       forecastHTML =
         forecastHTML +
         `
@@ -126,6 +126,7 @@ function displayWeatherCondition(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  getForecast(response.data.coord);
 }
 
 function navigation(event) {
@@ -167,4 +168,4 @@ celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 
 getSearchCity("Maniago");
-getForecast(response.data.coord);
+getForecast();
