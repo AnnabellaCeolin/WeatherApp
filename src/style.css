@@ -106,11 +106,15 @@ footer {
 }
 
 .footerLink {
-  color: white;
+  color: #86aba1;
   text-decoration: underline;
 }
 
 .footerLink:hover {
-  color: white;
+  color: #86aba1;
   cursor: pointer;
+}
+
+footer {
+  color: black;
 }
