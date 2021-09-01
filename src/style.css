@@ -2,7 +2,7 @@ body {
   background-color: #ffffff;
 }
 h1 {
-  margin-left: 45px;
+  margin-left: 40px;
 }
 
 h2 {
@@ -11,7 +11,7 @@ h2 {
 
 h3 {
   font-size: 15px;
-  margin-left: 45px;
+  margin-left: 20px;
 }
 
 footer {
@@ -79,11 +79,6 @@ footer {
   background-color: #ffffff;
   border-color: #dff3e3;
   color: #d68060;
-}
-
-.today-celsius {
-  color: black;
-  font-size: large;
 }
 
 .weather-forecast {
