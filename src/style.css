@@ -1,5 +1,5 @@
 body {
-  background-color: #fdf6f0;
+  background-color: #ffffff;
 }
 h1 {
   margin-left: 45px;
@@ -22,7 +22,7 @@ footer {
 }
 .content {
   position: static;
-  background-color: #e98580;
+  background-color: #86aba1;
   border-radius: 30px;
   max-width: 50%;
   margin: auto;
@@ -32,17 +32,6 @@ footer {
   color: black;
   font-family: "Anonymous Pro", monospace;
   text-transform: capitalize;
-}
-
-.forecastIcon {
-  width: 52px;
-  margin: 0 0 12 0px;
-}
-
-.days {
-  font-size: x-large;
-  font-weight: lighter;
-  margin: 12px;
 }
 
 .temperature {
@@ -61,8 +50,8 @@ footer {
 }
 
 .btn-primary {
-  background-color: #fdf6f0;
-  border-color: #fdf6f0;
+  background-color: #dff3e3;
+  border-color: #dff3e3;
   color: black;
   padding: 6px;
   margin: 3px;
@@ -71,35 +60,23 @@ footer {
 }
 
 .btn-primary:hover {
-  background-color: #df5e5e;
-  border-color: #df5e5e;
+  background-color: #ffffff;
+  border-color: #dff3e3;
+  color: #d68060;
 }
 
 .btn btn-primary {
-  background-color: #faad80;
-  border-color: transparent;
+  background-color: #dff3e3;
+  border-color: #dff3e3;
   padding: 6px;
   margin: 3px;
   width: 100px;
   height: 35px;
 }
 .btn btn-primary:hover {
-  background-color: #faad80;
-  border-color: #faad80;
-}
-
-.temp {
-  font-size: x-large;
-}
-
-.footerLink {
-  color: white;
-  text-decoration: underline;
-}
-
-.footerLink:hover {
-  color: white;
-  cursor: pointer;
+  background-color: #ffffff;
+  border-color: #dff3e3;
+  color: #d68060;
 }
 
 .today-celsius {
@@ -126,4 +103,14 @@ footer {
 .weather-forecast-temperatures {
   font-size: 13px;
   color: black;
+}
+
+.footerLink {
+  color: white;
+  text-decoration: underline;
+}
+
+.footerLink:hover {
+  color: white;
+  cursor: pointer;
 }
